@@ -2,12 +2,12 @@ Blog.factory('Post', function(Restangular) {
   var Post;
   Post = {
     get: function() {
-      return RestAngular
+      return Restangular
         .one('posts')
         .getList()
     },
     create: function() {
-      return RestAngular
+      return Restangular
         .one('posts')
         .customPOST(data);
     }
